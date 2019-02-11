@@ -4,6 +4,7 @@
 int ledPin = 5;
 int buttonApin = 9;
 int buttonBpin = 8;
+bool on = false;
 
 byte leds = 0;
 
@@ -16,6 +17,18 @@ void setup()
 
 void loop() 
 {
+  // Single button set up is here.
+  // if (digitalRead(buttonApin) == LOW) {
+  //   on = !on;
+  // }
+
+  // if (on) {
+  //   digitalWrite(ledPin, HIGH);
+  // } else {
+  //   digitalWrite(ledPin, LOW);
+  // }
+
+  // Two button set up here.
   if (digitalRead(buttonApin) == LOW)
   {
     digitalWrite(ledPin, HIGH);
